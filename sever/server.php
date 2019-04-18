@@ -3,7 +3,7 @@ use Workerman\Worker;
 require_once __DIR__ . '/workerman/Autoloader.php';
 
 // 注意：这里与上个例子不同，使用的是websocket协议
-$worker = new Worker("websocket://localhost:9100");
+$worker = new Worker("websocket://0.0.0.0:9100");
 
 // 启动4个进程对外提供服务
 $worker->count = 1;
