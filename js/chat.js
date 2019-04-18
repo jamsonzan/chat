@@ -18,7 +18,7 @@ function scrollToEnd() {
 
 message_scrollTop();
 
-var ws = new WebSocket("ws://129.204.147.27:10000");
+var ws = new WebSocket("ws://129.204.147.27:9100");
 ws.onopen = function() {
     var msg_obj = { "action_type": "login", "uid": uid, "username": username, "photo": photo };
     var msg = JSON.stringify(msg_obj);
